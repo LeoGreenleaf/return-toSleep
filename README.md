@@ -1,5 +1,5 @@
 # return-to_sleep-
-Leo and Mai's APCS Maze Project Holmes pd7
+By: Leo Greenleaf and Mai Rachlevsky
 
 ## statement of problem
 Returns the Boolean value of the statement “the maze is navigable, having a legal travel path that is continuous from start point to existing treasure”
