@@ -18,7 +18,7 @@ find the legal travel path from the next point.
 
 ## base case
 When the current point is the treasure(!).
-When there are no possible next step.
+When there are no possible next steps.
 
 ## English or pseudocode description of algorithm
 If the current point is the treasure, return true.
