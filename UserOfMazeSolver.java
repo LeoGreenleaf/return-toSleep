@@ -10,6 +10,6 @@ public class UserOfMazeSolver{
         System.out.println(testSolver(testMaze, maze));
     }
     public static boolean testSolver( MazeSolver solver, Maze x) {
-	      return solver.solve(x);
+	      return solver.mazeSolution(x);
     }
 }
