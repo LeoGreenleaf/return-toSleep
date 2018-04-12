@@ -17,8 +17,8 @@ the recursive abstraction can:
 find the legal travel path from the next point.
 
 ## base case
-When the current point is the treasure(!).
-When there are no possible next steps.
+When the current point is the treasure return true.
+When the current point is on a wall or nto on anything(somehow) retunr false.
 
 ## English or pseudocode description of algorithm
 If the current point is the treasure, return true.
