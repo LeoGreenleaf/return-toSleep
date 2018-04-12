@@ -1,3 +1,5 @@
+/** Tests mazeSolver **/ 
+
 public class UserOfMazeSolver{
   private static Displayer displayer;
   public static void main(String[] commandLine) throws java.io.FileNotFoundException {
