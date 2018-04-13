@@ -6,5 +6,4 @@ public class UserOfMazeSolver{
     	}
 	System.out.println(testMaze);
     	System.out.println(testMazeSolver.solve(testMaze));
-    	}
 }
