@@ -5,10 +5,8 @@ public class MazeSolver {
     public final static int TREASURE = 0;
     public final static int WALL = 1;
     public final static int STEPPING_STONE = 2;
-    public final static int EAST =  1;
-    public final static int NORTH = 2;
-    public final static int WEST =  4;
-    public final static int SOUTH = 8;
+    public final static int[] DIRECTIONS = {Maze.EAST, Maze.NORTH, Maze.SOUTH, Maze.WEST};
+
     //The real meat of the code
     public boolean solve(Maze mazeToBeSolved) {
     	//Base case for beginning outside of the map
