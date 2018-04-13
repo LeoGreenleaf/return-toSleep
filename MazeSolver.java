@@ -1,22 +1,21 @@
-/** The mazeSolver class takes a maze and using recursion returns the boolean value of the statement
-    “the maze is navigable, having a legal travel path that is continuous from start point to existing treasure”. **/
+/** Returns the boolean value of the statement
+    “The maze is navigable, having a legal travel path that is continuous from start point to existing treasure”. **/
 
 public class MazeSolver {
-    //Copied fields from Maze.java
+    //Copied fields from Maze.java for ease of coding and ease of understanding what is going on
     public final static int TREASURE = 0;
     public final static int WALL = 1;
     public final static int STEPPING_STONE = 2;
-    //""
     public final static int EAST =  1;
     public final static int NORTH = 2;
     public final static int WEST =  4;
     public final static int SOUTH = 8;
-    //Methods
+    //The real meat of the code
     public boolean solve(Maze mazeToBeSolved) {
     	//Base case for beginning outside of the map
 	if(mazeToBeSolved.explorerPosition == null) return false;
 	//Base case for explorer being on a treasure
-	if (mazeToBeSolved.explorerIsOnA() == TREASURE) return true
+	if (mazeToBeSolved.explorerIsOnA() == TREASURE) return true;
 	//Recursive case for moving in each direction
 	else if (mazeToBeSolved.explorerIsOnA() == STEPPING_STONE) {
 		//Create a snapshot to signify a successful/safe maze state
