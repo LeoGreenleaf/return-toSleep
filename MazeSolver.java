@@ -1,6 +1,5 @@
 /** Returns the boolean value of the statement
     “The maze is navigable, having a legal travel path that is continuous from start point to existing treasure”. **/
-
 public class MazeSolver {
     //Copied fields from Maze.java for ease of coding and ease of understanding what is going on
     public final static int TREASURE = 0;
