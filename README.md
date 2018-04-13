@@ -27,4 +27,4 @@ Otherwise, analyze the current point and the four adjacent points. Discard any o
 
 ## version*n* wish list
 
-
+## known bugs
