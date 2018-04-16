@@ -86,12 +86,16 @@ public class Maze {
       Deep copy of all instance fields.
      */
     public Maze( Maze old) {
-
-        // Copy the explorer's position (code by Holmes is asserted to work)
         explorerPosition = new Vector( old.explorerPosition);
-
-        throw new java.lang.RuntimeException(
-            "Write code to copy the maze[][] array and rankCount.");
+        maze = new int[old.rankCount][old.maze[0].length];
+        for (int rank = 0; rank < old.rankCount; rank++) {
+            for (int file = 0; file < old.maze[0].length; file++) {
+            maze[rank][file] = old.maze[rank][file];
+            }
+        }
+        rankCount = old.rankCount
+        //throw new java.lang.RuntimeException(
+        //"Write code to copy the maze[][] array and rankCount.");
     }
 
 
