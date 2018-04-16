@@ -5,10 +5,9 @@ public class MazeSolver {
     public final static int TREASURE = 0;
     public final static int WALL = 1;
     public final static int STEPPING_STONE = 2;
-    public final static int EAST =  1;
-    public final static int NORTH = 2;
-    public final static int WEST =  4;
-    public final static int SOUTH = 8;
+    public final static int[] DIRECTIONS = {Maze.EAST, Maze.NORTH, Maze.SOUTH, Maze.WEST};
+
+
     //The real meat of the code
     public boolean solve(Maze mazeToBeSolved) {
     	//Base case for beginning outside of the map
@@ -20,11 +19,11 @@ public class MazeSolver {
 		//Create a snapshot to signify a successful/safe maze state
 		Maze snapshot = new Maze(mazeToBeSolved);
 		//Move and check each direction in the order East, North, West, South
-		for(int n = 1; n <= 8; n = n*2) {
+		for(int n = 0; n < 4 ; n++ ) {
 			//Drop a wall to prevent loops (and confusion) in the future
 			mazeToBeSolved.dropA(WALL);
 			//Move the explorer in one of the four cardinal directions
-			mazeToBeSolved.go(n);
+			mazeToBeSolved.go(DIRECTIONS[n]);
 			//Board state insertable here (debugging)
 			//The real recursion (looks as far forward downs the path starting with the move intiated on line 29 and sees if any path woud lead to a result wiht the explorer on the treasure)
 			if(solve(mazeToBeSolved)) return true;
